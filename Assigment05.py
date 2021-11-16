@@ -20,6 +20,8 @@ strChoice = "" # A Capture the user option selection
 
 
 # -- Processing -- #
+# Step 1 - When the program starts, load the any data you have
+# in a text file called ToDoList.txt into a python list of dictionaries rows (like Lab 5-2)
 # Read ToDoList.txt
 file = open(objFile, "r")
 for row in file:
@@ -81,7 +83,7 @@ while (True):
             # Confirmation and menu ask.
             print("Most recent task and priority removed from list. Which option would you like to perform?")
         except:
-            print("Last new item already removed. Cannot remove further. Please select another option from te menu.")
+            print("Last new item already removed. Cannot remove further. Please select another option from the menu.")
         continue
 
     # Step 6 - Save tasks to the ToDoList.txt file
@@ -97,6 +99,6 @@ while (True):
         continue
     # Step 7 - Exit program
     elif (strChoice.strip() == '5'):
-        # Say goodbye to user
+        # Confirm successful exit
         print("Successfully exited program.")
         break  # and Exit the program
