@@ -1,0 +1,3 @@
+Eat,5
+Sleep,10
+Drink,3
